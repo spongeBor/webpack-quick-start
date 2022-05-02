@@ -26,7 +26,13 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['react', 'unicorn', 'promise', '@typescript-eslint', 'prettier'],
+  plugins: [
+    'react',
+    'unicorn',
+    'promise',
+    '@typescript-eslint',
+    'prettier',
+  ],
   settings: {
     'import/resolver': {
       node: {
@@ -45,7 +51,10 @@ module.exports = {
         js: 'never',
       },
     ],
-    'import/no-extraneous-dependencies': [ERROR, { devDependencies: true }],
+    'import/no-extraneous-dependencies': [
+      ERROR,
+      { devDependencies: true },
+    ],
     'import/prefer-default-export': OFF,
     'import/no-unresolved': ERROR,
     'import/no-dynamic-require': OFF,
@@ -83,13 +92,17 @@ module.exports = {
     '@typescript-eslint/no-empty-function': WARN,
     '@typescript-eslint/no-var-requires': OFF,
     '@typescript-eslint/explicit-function-return-type': OFF,
-    '@typescript-eslint/explicit-module-boundary-types': OFF,
+    '@typescript-eslint/explicit-module-boundary-types':
+      OFF,
     '@typescript-eslint/no-explicit-any': OFF,
     '@typescript-eslint/no-use-before-define': ERROR,
     '@typescript-eslint/no-unused-vars': WARN,
     'no-unused-vars': OFF,
 
-    'react/jsx-filename-extension': [ERROR, { extensions: ['.tsx', 'ts', '.jsx', 'js'] }],
+    'react/jsx-filename-extension': [
+      ERROR,
+      { extensions: ['.tsx', 'ts', '.jsx', 'js'] },
+    ],
     'react/jsx-indent-props': [ERROR, 2],
     'react/jsx-indent': [ERROR, 2],
     'react/jsx-one-expression-per-line': OFF,
@@ -111,7 +124,7 @@ module.exports = {
     'no-plusplus': OFF,
     'no-console': OFF,
     'class-methods-use-this': ERROR,
-    'jsx-quotes': [ERROR, 'prefer-single'],
+    'jsx-quotes': [OFF, 'prefer-single'],
     'global-require': OFF,
     'no-use-before-define': OFF,
     'no-restricted-syntax': OFF,

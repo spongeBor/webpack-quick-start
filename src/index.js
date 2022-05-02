@@ -1,8 +1,5 @@
-const obj = {
-  long: 'dffdskaldfjdslka;jdfdsakjfkl;ewjqrkewl;qruewiuqriowuriewuriouewioqurioeuwqroiuewnrewqrewqrewqrewqvnds,mnf,n',
-  name: 'vortesnail',
-  age: 25,
-  skill: (a) => {
-    console.log('sleep');
-  },
-};
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './app';
+
+ReactDOM.render(<App />, document.querySelector('#root'));
