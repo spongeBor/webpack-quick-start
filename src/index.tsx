@@ -1,8 +1,10 @@
+/* eslint-disable import/no-import-module-exports */
+/* eslint-disable unicorn/prefer-module */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app';
 
-ReactDOM.render(
-  <App name="vortesnail" age={25} />,
-  document.querySelector('#root'),
-);
+if (module && module.hot) {
+  module.hot.accept();
+}
+ReactDOM.render(<App />, document.querySelector('#root'));

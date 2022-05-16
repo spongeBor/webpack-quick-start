@@ -1,7 +1,7 @@
 interface add {
   sdfrew: string;
 }
-const add = (a, b) => {
+const add = (a: any, b: any) => {
   console.log(a + b);
   return a + b;
 };
